@@ -30,7 +30,7 @@ while ($line = mysql_fetch_array($result1)) {
 	<head>
 
 <?php
-echo "<title>".$nombreCategoria."</title>";
+echo "<title>Floristeria colors</title>";
 ?>
 
 
@@ -53,6 +53,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//fonts-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<link rel="stylesheet" type="text/css" href="css/nuevostyle.css">
 <script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){		
@@ -85,8 +86,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 			
 			<ul class="header-in">
-				<li ><a href="products.html" >  flores</a></li>
-				<li><a href="404.html">Nuestra Empresa</a> </li>
+				<li ><a href="index.php" >Inicio</a></li>
+				<li><a href="nosotros.php">Nuestra Empresa</a> </li>
 				<li><a href="contact.html">Contactanos</a></li>
 				
 			</ul>
@@ -150,363 +151,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             mysql_query ("SET NAMES 'utf8'");
 
             $result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
-
+			echo '<div class="espacio"> </div>';
 
             while ($line = mysql_fetch_array($result)) {
 
-            echo '<div class="col-md-3 box-in-at">';
-            echo '<div class=" grid_box portfolio-wrapper">	';	
-			echo'<a href="single.php?idProducto='.$line[0].'" > <img src="'. $line[2] .'" class="img-responsive" alt="">';
-		
-					
-						echo '</a> ';	
-		           echo '</div>';
+            	
 
-						echo '<div class="grid_1 simpleCart_shelfItem">';
-							echo '<a href="#" class="cup item_add"><span class=" item_price" >'.$line[3].'$ </span></a>';				
-						echo '</div>';
+            echo '<div class="col-md-3 box-in-at">';
+           		echo '<div class=" grid_box portfolio-wrapper">	';	
+						echo'<a href="single.php?idProducto='.$line[0].'" > <img src="'. $line[2] .'" class="img-responsive tamano-fijo" alt="">';
+
+						echo '<div class="zoom-icon">';								
 					
-				echo'</div>';
+						echo '<ul class="in-by-color">';
+						echo '	<li><h5>Click en la imagen para ver detalles</h5></li> ';                  
+						
+						
+							
+						echo '</ul>';
+					
+						echo '</div>';
+
+						echo '</a> ';	
+		    	echo '</div>';
+				echo '<div class="grid_1 simpleCart_shelfItem">';
+					echo '<a href="#" class="cup item_add"><span class=" item_price" >'.$line[3].'$ </span></a>';		
+				echo '</div>';
+			echo'</div>';
+			
                 
             }
+            echo '<div class="espacio"> </div>';
 
             // Liberar resultados
             mysql_free_result($result);
 
             // Cerrar la conexión
             mysql_close($link);
-            ?>
-			<div class="col-md-3 box-in-at">
-
-
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >45.000$ </span></a>					
-						</div>
-					<!---->
-				</div>
-			
-				
-
+            ?>		
 			
 				
 				<div class="clearfix"> </div>

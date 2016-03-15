@@ -514,16 +514,10 @@ padding:4em 0;
  h2.new{
 	color:#615c85;
 	font-size:1.5em;
-	  padding: 0 0.7em;
+	padding: 0 0.7em;
 }
  h2.new:after, h2.new:before{
-	content:"";
-	background:#fff;
-	width:476px;
-	height:2px;
-	display:inline-block;
-	  vertical-align: middle;
-	    margin:0 10px 0 0;
+	
 }
  h2.new:after{
 	margin:0 0px 0 10px;

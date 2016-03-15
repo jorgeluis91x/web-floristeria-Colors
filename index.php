@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-
+<link rel="stylesheet" type="text/css" href="css/nuevostyle.css">
 <script src="js/simpleCart.min.js"> </script>
 </head>
 <body> 
@@ -69,9 +69,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 			
 			<ul class="header-in">
-				<li ><a href="products.html" >  flores</a></li>
-				<li><a href="404.html">Nuestra Empresa</a> </li>
-				<li><a href="contact.html">Contactanos</a></li>
+				<li ><a href="index.php" >Inicio</a></li>
+				<li><a href="nosotros.php">Quiènes somos</a> </li>
+				<li><a href="contact.html">Contacto</a></li>
 				
 			</ul>
 			<div class="search-top">
@@ -297,20 +297,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       
           while ($line2 = mysql_fetch_array($result2)) {
 
-          	echo '<div class="item">';
-				echo '<div class=" box-in">';
-			echo '<div class=" grid_box">';		
-							echo '<a href="single.php?idProducto='.$line2[0].'" > <img src="'.$line2[5].'" class="img-responsive" alt="">';
-							 	
-						
+          echo '<div class="col-md-12 box-in-at">';
+           		echo '<div class=" grid_box portfolio-wrapper">	';	
+						echo'<a href="single.php?idProducto='.$line2[0].'" > <img src="'. $line2[5] .'" class="img-responsive tamano-fijos" alt="">';
+
+						echo '<div class="zoom-icon">';								
 					
-						echo ' </a> </div><div class="grid_1 simpleCart_shelfItem">';
-							echo '<a href="#" class="cup item_add"><span class=" item_price" >'.$line2[3].' $ </span></a>';				
-						echo '</div></div></div>';
+						echo '<ul class="in-by-color">';
+						echo '	<li><h5>Click en la imagen para ver detalles</h5></li> ';                  
+						
+						
+							
+						echo '</ul>';
+					
+						echo '</div>';
+
+						echo '</a> ';	
+		    	echo '</div>';
+				echo '<div class="grid_1 simpleCart_shelfItem">';
+					echo '<a href="#" class="cup item_add"><span class=" item_price" >'.$line2[3].'$ </span></a>';		
+				echo '</div>';
+			echo'</div>';
+			
+                
+            
            
            
           }
 
+            
         ?>
 
 				<div class="clearfix"> </div>
