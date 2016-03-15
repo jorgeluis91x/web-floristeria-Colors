@@ -297,7 +297,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       
           while ($line2 = mysql_fetch_array($result2)) {
 
-          echo '<div class="col-md-12 box-in-at">';
+          echo '<div class="col-md-12 box-in-atre">';
            		echo '<div class=" grid_box portfolio-wrapper">	';	
 						echo'<a href="single.php?idProducto='.$line2[0].'" > <img src="'. $line2[5] .'" class="img-responsive tamano-fijos" alt="">';
 

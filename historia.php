@@ -66,6 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<link rel="stylesheet" type="text/css" href="css/nuevostyle.css">
 
 <script src="js/simpleCart.min.js"> </script>
 </head>
@@ -156,7 +157,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             ?>
             <!-- --------------------------- -->
             <div class="centrado">
-					<div class="col-md-9 box-in-at">
+					<div class="col-md-12 ">
+					<div class="grid_1 simpleCart_shelfItem">
+							<a  class="cup item_add hov"><span class=" item_price" >HISTORIA </span></a>					
+					</div>
 					<div class=" grid_box portfolio-wrapper">		
 							<!-- <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">-->
 							 	<div class="parrafo">
@@ -168,9 +172,7 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
 									  	
 		           </div>
 				<!---->
-					<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >HISTORIA </span></a>					
-					</div>
+					
 					<!---->
 				</div>	
 

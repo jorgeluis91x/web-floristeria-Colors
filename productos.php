@@ -157,7 +157,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             	
 
-            echo '<div class="col-md-3 box-in-at">';
+            echo '<div class="col-md-3 box-in-at r">';
            		echo '<div class=" grid_box portfolio-wrapper">	';	
 						echo'<a href="single.php?idProducto='.$line[0].'" > <img src="'. $line[2] .'" class="img-responsive tamano-fijo" alt="">';
 

@@ -121,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                              //echo "<li><a href='productos.php?idCategoria=".$var1."'>MISIÒN &nbsp; &nbsp;   VISIÒN</a></li>";
                              echo "<li><a href='nosotros.php'>MISIÒN &nbsp; &nbsp;   VISIÒN</a></li>"; 
                              echo "<li><a href='texto.php?idCategoria=".$var1."'>OBJETIVOS INTEGRALES</a></li>";
-                             echo "<li><a href='texto.php?idCategoria=".$var2."'>HISTORIA</a></li>";       
+                             echo "<li><a href='historia.php?idCategoria=".$var2."'>HISTORIA</a></li>";       
                                 //echo "<li><a href='productos.php?idCategoria=".$var1."'>MISIÒN &nbsp; &nbsp;   VISIÒN</a></li>";//  }
 
                                     // Liberar resultados
@@ -155,6 +155,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             ?>
             <!-- --------------------------- -->
 					<div class="col-md-6 box-in-at">
+					<div class="grid_1 simpleCart_shelfItem">
+							<a  class="cup item_add hov"><span class=" item_price" >MISIÒN </span></a>					
+					</div>
 					<div class=" grid_box portfolio-wrapper">		
 							<!-- <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">-->
 							 	<div class="parrafo">
@@ -166,15 +169,16 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
 									  	
 		           </div>
 				<!---->
-					<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >MISIÒN </span></a>					
-					</div>
 					<!---->
 				</div>	
 	
 				<!-- --------------------------- -->
 
 				<div class="col-md-6 box-in-at">
+				<div class="grid_1 simpleCart_shelfItem">
+							<a  class="cup item_add hov"><span class=" item_price" >VISIÒN </span></a>					
+					</div>
+
 					<div class=" grid_box portfolio-wrapper">		
 							<!-- <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">-->
 							 	<div class="parrafo">
@@ -186,9 +190,7 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
 									  	
 		           </div>
 				<!---->
-					<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >VISIÒN </span></a>					
-					</div>
+					
 					<!---->
 				</div>	
 
