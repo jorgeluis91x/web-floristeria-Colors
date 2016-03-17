@@ -51,6 +51,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style2.css" type="text/css" media="all">
+ 
+  <script type="text/javascript" src="js/jjquery-1.7.1.js" ></script>
+  <script type="text/javascript" src="js/sscripts.js"></script>
 <!--//fonts-->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
@@ -88,7 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 			<ul class="header-in">
 				<li ><a href="index.php" >Inicio</a></li>
-				<li><a href="nosotros.php">Quiènes somos</a> </li>
+				<li><a href="nosotros.php#!/pageAbout">Quiènes somos</a> </li>
 				<li><a href="contact.html">Contacto</a></li>
 				
 			</ul>
@@ -119,9 +125,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				      		$var2=4;
                                  // while ($line = mysql_fetch_array($result)) {
                              //echo "<li><a href='productos.php?idCategoria=".$var1."'>MISIÒN &nbsp; &nbsp;   VISIÒN</a></li>";
-                             echo "<li><a href='nosotros.php'>MISIÒN &nbsp; &nbsp;   VISIÒN</a></li>"; 
-                             echo "<li><a href='texto.php?idCategoria=".$var1."'>OBJETIVOS INTEGRALES</a></li>";
-                             echo "<li><a href='historia.php?idCategoria=".$var2."'>HISTORIA</a></li>";       
+                              echo "<li><a href='nosotros.php#!/historia'>HISTORIA</a></li>";
+                              echo "<li><a href='nosotros.php#!/pageAbout'>VISIÒN</a></li>";
+                              echo "<li><a href='nosotros.php#!/mision'>MISIÒN</a></li>";
+                             echo "<li><a href='nosotros.php#!/pageAbout1'>OBJETIVOS INTEGRALES</a></li>";
+                             
+                                    
                                 //echo "<li><a href='productos.php?idCategoria=".$var1."'>MISIÒN &nbsp; &nbsp;   VISIÒN</a></li>";//  }
 
                                     // Liberar resultados
@@ -144,61 +153,117 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!-- ----------------------------------------------------------------------------------------------------- -->
-	<div class="container">
-		<div class="product">
-				
-		<div class="pink">
+					
+		
 
 			<?php    
             // Cerrar la conexión
             mysql_close($link);
             ?>
-            <!-- --------------------------- -->
-					<div class="col-md-6 box-in-at">
-					<div class="grid_1 simpleCart_shelfItem">
-							<a  class="cup item_add hov"><span class=" item_price" >MISIÒN </span></a>					
-					</div>
-					<div class=" grid_box portfolio-wrapper">		
-							<!-- <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">-->
-							 	<div class="parrafo">
+            <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    
+  <div class="">
+    <div class="menuHolder">
+            <nav class="menu">
+    			<ul id="menu">     					       	
+                    <li><a href=""><h2></h2></a></li>
+                    <li><a href=""><h2></h2></a></li>
+    			</ul>
+    		</nav>
+        </div> 
+			<!--content -->
+			<article id="content">
+             	<ul>
+				    <li id="pageAbout">
+					   <div class="">
+                            
+                            <div class="containerContent">
+                                <h2>VISION</h2>
+                                	<div class="col1 padBot1">
+                                        <div class="col1">
+                                        	<p>xxxxxxxxxxxxxxxxxxxxxxxsolution. It is also XHTML &amp; CSS valid. The PSD source files of this  are available for free for the registered members of TemplateMonster.com. Feel free to get them!</p>
+                                    	</div>
+                                	</div>                                  
+                                
+                            </div>
+                       </div>	
+					</li>     
+					<li id="mision">
+					   <div class="box">
+                            <div class="containerContent">
+                                <h2>MISION</h2>
+                                	<div class="col1 padBot1">
+                                        <div class="col1">
+                                        	<p>mision mision mision mision mision mision mision mision mision mision 
+                                       		 mision mision mision mision mision mision mision mision mision mision 
+                                        	mision mision mision mision mision mision mision mision mision mision 
+                                        	mision mision mision mision mision mision mision mision mision mision
+                                        	mision mision mision mision mision mision mision mision mision mision 
+                                        	mision mision mision mision mision mision mision mision mision mision 
+                                         	</p>
 
-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                                    	</div>
+                                	</div>                                  
+                                
+                            </div>
+                       </div>	
+					</li>     
+                    <li id="pageAbout1">
+                       <div class="">
+                            
+                            <div class="containerContent">
+                                <h2 class="tit">OBJETIVOS INTEGRALES</h2>
+                                <div class="col1 padBot1">
+                                    
+                                    <div class="col1">
+                                        <p>Cream is one of  created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid. The PSD source files of this  are available for free for the registered members of TemplateMonster.com. Feel free to get them!</p>
+                                    </div>
+                                </div>                                  
+                                
+                            </div>
+                       </div>   
+                    </li>   
+                    <li id="historia">
+                       <div class="">
+                            
+                            <div class="containerContent">
+                                <h2>HISTORIA</h2>
+                                <div class="col1 padBot1">
+                                    
+                                    <div class="col1">
+                                    <p>Cream is one of  created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid. The PSD source files of this  are available for free for the registered members of TemplateMonster.com. Feel free to get them!</p>
+                                        
+                                    </div>
+                                </div>                                  
+                                
+                            </div>
+                       </div>   
+                    </li>             
+                
+				</ul>
+			</article>
+
+        			<!--content end-->
+             <!--footer -->
+            
+           	<!--footer end-->
+         
+
+</div>
 
 
-							 	</div>
-									  	
-		           </div>
-				<!---->
-					<!---->
-				</div>	
-	
-				<!-- --------------------------- -->
-
-				<div class="col-md-6 box-in-at">
-				<div class="grid_1 simpleCart_shelfItem">
-							<a  class="cup item_add hov"><span class=" item_price" >VISIÒN </span></a>					
-					</div>
-
-					<div class=" grid_box portfolio-wrapper">		
-							<!-- <a href="single.html" > <img src="images/flores5.jpg" class="img-responsive" alt="">-->
-							 	<div class="parrafo">
-
-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
 
 
-							 	</div>
-									  	
-		           </div>
-				<!---->
 					
-					<!---->
-				</div>	
+			<!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+			
 
 				<!-- --------------------------- -->
 
 
 
-				<div class="clearfix"> </div>
+			
 			</div>
 		</div>
 		<!---->	
@@ -243,6 +308,10 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
 					<li ><a href="#" ><i class="we-at"> </i></a></li>
 					<li ><a href="#" ><i class="we-at-at"> </i></a></li>
 				</ul>
+			</div>
+
+			<div class="col-md-3 footer-right">
+				
 			</div>
 			<div class="clearfix"> </div>
 		</div>

@@ -4,7 +4,19 @@
 	padding: 15px;
 	text-align:justify;
 	margin-bottom: 5px;
-	border: solid 1px #B39DDB;
+	
+}
+.medio{
+width: 100%;
+
+background: #fa7455;
+
+}
+./*c{
+	background: #fa7455;
+}*/
+.tit{
+	color: #615c85;
 }
 
 .hov{
@@ -67,10 +79,26 @@ font-size: 18px;
 
 	width: 90%;
 }
+#content{
+	width: 70%;
+	
+	background-color: #ffffff;
+	
+}
 
 }
 
 @media(max-width:768px){
+
+#content{
+	width: 70%;
+	padding-left: 0%; padding-right: 0%
+	background-color: #ffffff;
+	float: left;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+}
 
 .re{
 
@@ -121,6 +149,15 @@ font-size: 18px;
 
 	width: 100%;
 }
+	#content{
+	width: 70%;
+	padding-left: 0%; padding-right: 0%
+	background-color: #ffffff;
+	float: left;
+	margin-left: 15%;
+	margin-right: 5%;
+	
+}
 }
 @media(max-width:768px){
 .box-in-atre{
@@ -130,10 +167,27 @@ font-size: 18px;
 }
 
 @media(max-width:736px){
+		#content{
+	width: 60%;
+	padding-left: 0%; padding-right: 0%
+	background-color: #ffffff;
+	float: left;
+	margin-left: 10%;
+	margin-right: 5%;
+	
+}
 
 }
 @media(max-width:667px){
-
+	#content{
+	width: 60%;
+	padding-left: 0%; padding-right: 0%
+	background-color: #ffffff;
+	float: left;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+}
 }
 @media(max-width:640px){
 
@@ -142,7 +196,15 @@ font-size: 18px;
 }
 @media(max-width:568px){
 
+	#content{
+	width: 60%;
+	padding-left: 0%; padding-right: 0%
+	background-color: #ffffff;
+	float: left;
+	margin-left: 5%;
+	margin-right: 5%;
 	
+}
 }
 @media(max-width:480px){
 	.box-in-at{
@@ -150,11 +212,20 @@ font-size: 18px;
 	float: left;
 	margin-bottom: 10px;
 }
+
 .box-in-atre{
 
 	width: 90%;
 }
-
+	#content{
+	width: 40%;
+	padding-left: 0%; padding-right: 0%
+	background-color: #ffffff;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	
+}
 }
 @media(max-width:414px){
 
